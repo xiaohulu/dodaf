@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Data">
+  <eAnnotations source="Author:No Magic, Inc..&#xA;Created:3/20/08 4:25 AM.&#xA;Title:UPDM profile.&#xA;Comment:.&#xA;"
+      references="#/"/>
+  <eSubpackages name="UAF" nsURI="http://www.omg.org/spec/UPDM/20121004/UPDM-Profile">
+    <eAnnotations source="UPDM is top level profile root." references="#//UAF"/>
+    <eSubpackages name="Actuals">
+      <eAnnotations source="Actual elements in the organizational part of the structural part of the Operational profile. "
+          references="#//UAF/Actuals"/>
+      <eSubpackages name="Connectivity"/>
+      <eSubpackages name="Constraints"/>
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Taxonomy"/>
+      <eSubpackages name="Traceability"/>
+    </eSubpackages>
+    <eSubpackages name="Operational">
+      <eSubpackages name="Connectivity">
+        <eClassifiers xsi:type="ecore:EEnum" name="OperationalExchangeKind">
+          <eAnnotations source="Enumeration of operational exchange kinds, used to support the exchangeKind tag of the OperationalExchange stereotype."
+              references="#//UAF/Operational/Connectivity/OperationalExchangeKind"/>
+          <eLiterals name="MaterielExchange">
+            <eAnnotations source="A flow of materiel (artifacts) between Functions."
+                references="#//UAF/Operational/Connectivity/OperationalExchangeKind/MaterielExchange"/>
+          </eLiterals>
+          <eLiterals name="OrganizationalExchange">
+            <eAnnotations source="A LogicalFlow where human resources (PostTypes, RoleTypes) flow between Nodes."
+                references="#//UAF/Operational/Connectivity/OperationalExchangeKind/OrganizationalExchange"/>
+          </eLiterals>
+          <eLiterals name="EnergyExchange">
+            <eAnnotations source="A LogicalFlow where energy is flowed from one node to another."
+                references="#//UAF/Operational/Connectivity/OperationalExchangeKind/EnergyExchange"/>
+          </eLiterals>
+          <eLiterals name="InformationExchange">
+            <eAnnotations source="A LogicalFlow where energy is flowed from one node to another."
+                references="#//UAF/Operational/Connectivity/OperationalExchangeKind/InformationExchange"/>
+          </eLiterals>
+          <eLiterals name="ConfigurationExchange">
+            <eAnnotations source="A LogicalFlow where CapabilityConfigurations flow from one node to another."
+                references="#//UAF/Operational/Connectivity/OperationalExchangeKind/ConfigurationExchange"/>
+          </eLiterals>
+          <eLiterals name="GeoPoliticalExtentExchange">
+            <eAnnotations source="A LogicalFlow where GeoPoliticalExtents (i.e. Borders) flow from one place to another."
+                references="#//UAF/Operational/Connectivity/OperationalExchangeKind/GeoPoliticalExtentExchange"/>
+          </eLiterals>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Constraints"/>
+      <eSubpackages name="Information"/>
+      <eSubpackages name="Interaction Scenarios"/>
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="States"/>
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Taxonomy"/>
+    </eSubpackages>
+    <eSubpackages name="Metadata">
+      <eSubpackages name="Connectivity"/>
+      <eSubpackages name="Constraints">
+        <eClassifiers xsi:type="ecore:EEnum" name="RuleKind">
+          <eAnnotations source="Enumeration of possible kinds for constraints." references="#//UAF/Metadata/Constraints/RuleKind"/>
+          <eLiterals name="StructuralAssertion">
+            <eAnnotations source="Statement that something of importance to the business either exists as a concept of interest or exists in relationship to another thing of interest."
+                references="#//UAF/Metadata/Constraints/RuleKind/StructuralAssertion"/>
+          </eLiterals>
+          <eLiterals name="ActionAssertion">
+            <eAnnotations source="Statement that concerns some dynamic aspect of the business."
+                references="#//UAF/Metadata/Constraints/RuleKind/ActionAssertion"/>
+          </eLiterals>
+          <eLiterals name="Derivation">
+            <eAnnotations source="Rule derived from another rule." references="#//UAF/Metadata/Constraints/RuleKind/Derivation"/>
+          </eLiterals>
+          <eLiterals name="Contract">
+            <eAnnotations source="A consent among parties regarding the terms and conditions of activities that said parties participate in."
+                references="#//UAF/Metadata/Constraints/RuleKind/Contract"/>
+          </eLiterals>
+          <eLiterals name="Constraint">
+            <eAnnotations source="Business Rule, Rule, Restraint, Operational Limitation."
+                references="#//UAF/Metadata/Constraints/RuleKind/Constraint"/>
+          </eLiterals>
+          <eLiterals name="Guidance">
+            <eAnnotations source="An authoritative statement intended to lead or steer the execution of actions."
+                references="#//UAF/Metadata/Constraints/RuleKind/Guidance"/>
+          </eLiterals>
+          <eLiterals name="SecurityPolicy">
+            <eAnnotations source="An OperationalConstraint that specifies policy for information handling, physical security, encryption, etc."
+                references="#//UAF/Metadata/Constraints/RuleKind/SecurityPolicy"/>
+          </eLiterals>
+          <eLiterals name="Caveat"/>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Information">
+        <eClassifiers xsi:type="ecore:EEnum" name="InformationKind">
+          <eAnnotations source="Enumeration of kinds of information, derived from MODAF and DoDAF, used to support the InformationKind tag of the Information stereotype."
+              references="#//UAF/Metadata/Information/InformationKind"/>
+          <eLiterals name="Information">
+            <eAnnotations source="Information is the state of a something of interest that is materialized -- in any medium or form -- and communicated or received."
+                references="#//UAF/Metadata/Information/InformationKind/Information"/>
+          </eLiterals>
+          <eLiterals name="DomainInformation">
+            <eAnnotations source="Types of information within the scope or domain of the architecture."
+                references="#//UAF/Metadata/Information/InformationKind/DomainInformation"/>
+          </eLiterals>
+          <eLiterals name="PositionReferenceFrame">
+            <eAnnotations source="An arbitrary set of axes with reference to which the position or motion of something is described or physical laws are formulated."
+                references="#//UAF/Metadata/Information/InformationKind/PositionReferenceFrame"/>
+          </eLiterals>
+          <eLiterals name="PedigreeInformation">
+            <eAnnotations source="Information describing pedigree." references="#//UAF/Metadata/Information/InformationKind/PedigreeInformation"/>
+          </eLiterals>
+          <eLiterals name="Data">
+            <eAnnotations source="Representation of information in a formalized manner suitable for communication, interpretation, or processing by humans or by automatic means. Examples could be whole models, packages, entities, attributes, classes, domain values, enumeration values, records, tables, rows, columns, and fields."
+                references="#//UAF/Metadata/Information/InformationKind/Data"/>
+          </eLiterals>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="Taxonomy">
+        <eClassifiers xsi:type="ecore:EEnum" name="ActualMeasurementKind">
+          <eAnnotations source="Possible kinds of ActualMeasurementSet intention."
+              references="#//UAF/Metadata/Taxonomy/ActualMeasurementKind"/>
+          <eLiterals name="Actual">
+            <eAnnotations source="Actual Measure." references="#//UAF/Metadata/Taxonomy/ActualMeasurementKind/Actual"/>
+          </eLiterals>
+          <eLiterals name="Required">
+            <eAnnotations source="Required Measure" references="#//UAF/Metadata/Taxonomy/ActualMeasurementKind/Required"/>
+          </eLiterals>
+          <eLiterals name="Estimate">
+            <eAnnotations source="Estimate." references="#//UAF/Metadata/Taxonomy/ActualMeasurementKind/Estimate"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EEnum" name="EnvironmentKind">
+          <eLiterals name="TerrainType"/>
+          <eLiterals name="WeatherConditions"/>
+          <eLiterals name="LightConditions"/>
+          <eLiterals name="CBRNEnvironment"/>
+          <eLiterals name="SituationType"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EEnum" name="GeoPoliticalExtentTypeKind">
+          <eAnnotations source="Enumeration of kinds of geopolitical extent type, derived from DoDAF, used to support the  geoPoliticalExtentTypeKind tag of the GeopoliticalExtentType stereotype."
+              references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind"/>
+          <eLiterals name="GeoFeatureType">
+            <eAnnotations source="Powertype Of GeoFeature." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/GeoFeatureType"/>
+          </eLiterals>
+          <eLiterals name="RegionOfCountryType">
+            <eAnnotations source="Powertype Of RegionOfCountry." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/RegionOfCountryType"/>
+          </eLiterals>
+          <eLiterals name="CountryType">
+            <eAnnotations source="Powertype Of Country." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/CountryType"/>
+          </eLiterals>
+          <eLiterals name="RegionOfWorldType">
+            <eAnnotations source="Powertype Of RegionOfWorld." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/RegionOfWorldType"/>
+          </eLiterals>
+          <eLiterals name="FacilityType">
+            <eAnnotations source="Powertype Of Facility." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/FacilityType"/>
+          </eLiterals>
+          <eLiterals name="SiteType">
+            <eAnnotations source="Powertype Of Site." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/SiteType"/>
+          </eLiterals>
+          <eLiterals name="InstallationType">
+            <eAnnotations source="Powertype Of Installation." references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/InstallationType"/>
+          </eLiterals>
+          <eLiterals name="OtherType">
+            <eAnnotations source="Other GeoPoliticalExtentType kind that is not on the enumerated list."
+                references="#//UAF/Metadata/Taxonomy/GeoPoliticalExtentTypeKind/OtherType"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EEnum" name="LocationTypeKind">
+          <eAnnotations source="Enumeration of kinds of location types, derived from DoDAF, used to support the LocationTypeKind tag of the LocationTypeKind stereotype."
+              references="#//UAF/Metadata/Taxonomy/LocationTypeKind"/>
+          <eLiterals name="SolidVolumeType">
+            <eAnnotations source="Powertype Of SolidVolume." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/SolidVolumeType"/>
+          </eLiterals>
+          <eLiterals name="SurfaceType">
+            <eAnnotations source="Powertype Of Surface." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/SurfaceType"/>
+          </eLiterals>
+          <eLiterals name="LineType">
+            <eAnnotations source="Powertype Of Line." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/LineType"/>
+          </eLiterals>
+          <eLiterals name="PointType">
+            <eAnnotations source="Powertype Of Point." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/PointType"/>
+          </eLiterals>
+          <eLiterals name="GeoStationaryPointType">
+            <eAnnotations source="Powertype Of GeoStationaryPoint." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/GeoStationaryPointType"/>
+          </eLiterals>
+          <eLiterals name="PlanarSurfaceType">
+            <eAnnotations source="Powertype Of PlanarSurface." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/PlanarSurfaceType"/>
+          </eLiterals>
+          <eLiterals name="PolygonAreaType">
+            <eAnnotations source="Powertype Of PolygonArea." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/PolygonAreaType"/>
+          </eLiterals>
+          <eLiterals name="RectangularAreaType">
+            <eAnnotations source="Powertype Of RectangularArea." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/RectangularAreaType"/>
+          </eLiterals>
+          <eLiterals name="ElipticalAreaType">
+            <eAnnotations source="Powertype Of EllipticalArea." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/ElipticalAreaType"/>
+          </eLiterals>
+          <eLiterals name="CircularAreaType">
+            <eAnnotations source="Powertype Of CircularArea." references="#//UAF/Metadata/Taxonomy/LocationTypeKind/CircularAreaType"/>
+          </eLiterals>
+          <eLiterals name="OtherType">
+            <eAnnotations source="Other LocationType kind that is not on the enumerated list."
+                references="#//UAF/Metadata/Taxonomy/LocationTypeKind/OtherType"/>
+          </eLiterals>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EEnum" name="LocationKind">
+          <eAnnotations source="Enumeration of location kinds, used to support the locationKind tag of the LocationKind stereotype."
+              references="#//UAF/Metadata/Taxonomy/LocationKind"/>
+          <eLiterals name="SolidVolume">
+            <eAnnotations source="The amount of space occupied by a three-dimensional object of definite shape; not liquid or gaseous."
+                references="#//UAF/Metadata/Taxonomy/LocationKind/SolidVolume"/>
+          </eLiterals>
+          <eLiterals name="Surface">
+            <eAnnotations source="A portion of space having length and breadth but no thickness or regards to time."
+                references="#//UAF/Metadata/Taxonomy/LocationKind/Surface"/>
+          </eLiterals>
+          <eLiterals name="Line">
+            <eAnnotations source="A geometric figure formed by a point moving along a fixed direction and the reverse direction."
+                references="#//UAF/Metadata/Taxonomy/LocationKind/Line"/>
+          </eLiterals>
+          <eLiterals name="Point">
+            <eAnnotations source="Unidimensional Individual (dimensionless in space, existent over all time)."
+                references="#//UAF/Metadata/Taxonomy/LocationKind/Point"/>
+          </eLiterals>
+          <eLiterals name="GeoStationaryPoint">
+            <eAnnotations source="Unidimensional Individual (dimensionless in space, existent over all time)."
+                references="#//UAF/Metadata/Taxonomy/LocationKind/GeoStationaryPoint"/>
+          </eLiterals>
+          <eLiterals name="PlanarSurface">
+            <eAnnotations source="A two-dimensional portion of space." references="#//UAF/Metadata/Taxonomy/LocationKind/PlanarSurface"/>
+          </eLiterals>
+          <eLiterals name="PolygonArea">
+            <eAnnotations source="The space enclosed by a polygon." references="#//UAF/Metadata/Taxonomy/LocationKind/PolygonArea"/>
+          </eLiterals>
+          <eLiterals name="RectangularArea">
+            <eAnnotations source="The space enclosed by a rectangle." references="#//UAF/Metadata/Taxonomy/LocationKind/RectangularArea"/>
+          </eLiterals>
+          <eLiterals name="ElipticalArea">
+            <eAnnotations source="The space enclosed by an ellipse." references="#//UAF/Metadata/Taxonomy/LocationKind/ElipticalArea"/>
+          </eLiterals>
+          <eLiterals name="CircularArea">
+            <eAnnotations source="The space enclosed by a circle." references="#//UAF/Metadata/Taxonomy/LocationKind/CircularArea"/>
+          </eLiterals>
+          <eLiterals name="Other">
+            <eAnnotations source="Other Location kind that is not on the enumerated list."
+                references="#//UAF/Metadata/Taxonomy/LocationKind/Other"/>
+          </eLiterals>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Traceability"/>
+    </eSubpackages>
+    <eSubpackages name="Personnel">
+      <eSubpackages name="Connectivity"/>
+      <eSubpackages name="Constraints"/>
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="Taxonomy"/>
+      <eSubpackages name="Traceability">
+        <eClassifiers xsi:type="ecore:EEnum" name="ResponsibleRoleKind">
+          <eLiterals name="Manager"/>
+          <eLiterals name="ResponsibleOwner"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="Project">
+      <eSubpackages name="Connectivity"/>
+      <eSubpackages name="Roadmap"/>
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Taxonomy">
+        <eClassifiers xsi:type="ecore:EEnum" name="ActualMilestoneKind">
+          <eLiterals name="InService"/>
+          <eLiterals name="Deployed"/>
+          <eLiterals name="NoLongerUsed"/>
+          <eLiterals name="OutOfService"/>
+          <eLiterals name="Other"/>
+        </eClassifiers>
+        <eClassifiers xsi:type="ecore:EEnum" name="ProjectKind">
+          <eLiterals name="Programme"/>
+          <eLiterals name="Portfolio"/>
+          <eLiterals name="Project"/>
+          <eLiterals name="PersonnelDevelopment"/>
+        </eClassifiers>
+      </eSubpackages>
+    </eSubpackages>
+    <eSubpackages name="Resources">
+      <eSubpackages name="Connectivity">
+        <eClassifiers xsi:type="ecore:EEnum" name="ResourceExchangeKind">
+          <eLiterals name="ResourceCommunication"/>
+          <eLiterals name="ResourceMovement"/>
+          <eLiterals name="ResourceEnergyFlow"/>
+          <eLiterals name="GeoPoliticalExtentExchange"/>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Constraints"/>
+      <eSubpackages name="Flows"/>
+      <eSubpackages name="Information">
+        <eClassifiers xsi:type="ecore:EEnum" name="DataModelKind">
+          <eLiterals name="Conceptual"/>
+          <eLiterals name="Logical"/>
+          <eLiterals name="Physical"/>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Interaction Scenarios"/>
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="Roadmap">
+        <eClassifiers xsi:type="ecore:EEnum" name="WholeLifeConfigurationKind">
+          <eLiterals name="Service"/>
+          <eLiterals name="ResourcePerformer"/>
+          <eLiterals name="OrganizationalResource"/>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="States"/>
+      <eSubpackages name="Structure">
+        <eClassifiers xsi:type="ecore:EEnum" name="RoleKind">
+          <eAnnotations source="Enumeration of the roles that a ResourceRole may play in the context of a CapabilityConfiguration or System, used to support the RoleKind tag of a ResourceRole."
+              references="#//UAF/Resources/Structure/RoleKind"/>
+          <eLiterals name="Part">
+            <eAnnotations source="Usage of a ResourceArtifact as a part of another ResourceArtifact."
+                references="#//UAF/Resources/Structure/RoleKind/Part"/>
+          </eLiterals>
+          <eLiterals name="Component">
+            <eAnnotations source="(MODAF SoftwareComponent) Asserts that Software is a component of another Software."
+                references="#//UAF/Resources/Structure/RoleKind/Component"/>
+          </eLiterals>
+          <eLiterals name="Used Configuration">
+            <eAnnotations source="The usage of a PhysicalArchitecture in another PhysicalArchitecture."
+                references="#//UAF/Resources/Structure/RoleKind/Used%20Configuration"/>
+          </eLiterals>
+          <eLiterals name="Human Resource">
+            <eAnnotations source="The role of an OrganizationalResource in a PhysicalArchitecture."
+                references="#//UAF/Resources/Structure/RoleKind/Human%20Resource"/>
+          </eLiterals>
+          <eLiterals name="Platform">
+            <eAnnotations source="Usage of a ResourceArtifact as a platform (e.g. vessel, aircraft, etc.) in a particular PhysicalArchitecture."
+                references="#//UAF/Resources/Structure/RoleKind/Platform"/>
+          </eLiterals>
+          <eLiterals name="System">
+            <eAnnotations source="The usage of a ResourceArtifact as a System in a PhysicalArchitecture."
+                references="#//UAF/Resources/Structure/RoleKind/System"/>
+          </eLiterals>
+          <eLiterals name="Sub Organization">
+            <eAnnotations source="Asserts that one OrganizationType is typically the parent of another - e.g. a squadron may be part of a batallion."
+                references="#//UAF/Resources/Structure/RoleKind/Sub%20Organization"/>
+          </eLiterals>
+          <eLiterals name="Post Role">
+            <eAnnotations source="(MODAF Post) Asserts that a Post exists in an OrganizationType of the type specified by the related PostType."
+                references="#//UAF/Resources/Structure/RoleKind/Post%20Role"/>
+          </eLiterals>
+          <eLiterals name="Responsibility Role">
+            <eAnnotations source="(MODAF Role) A ResourceUsage that asserts a given PostType has a RoleType."
+                references="#//UAF/Resources/Structure/RoleKind/Responsibility%20Role"/>
+          </eLiterals>
+          <eLiterals name="Equipment">
+            <eAnnotations source="UPDM: Equipment is a physical resource that is used to accomplish a task or function in a system or an environment.&#xA;MODAF: (MODAF::PhysicalAsset): Usage of an ResourceArtifact (MODAF::Artefact) as a component of a ResourceConfiguration.&#xA;DoDAF: NA&#xA;"
+                references="#//UAF/Resources/Structure/RoleKind/Equipment"/>
+          </eLiterals>
+          <eLiterals name="Sub System Part">
+            <eAnnotations source="UPDM: Indicates that a (sub)system is part of another system.&#xA;MODAF: Usage of an Artefact (UPDM::ResourceArtifact) as a part of another Artefact (UPDM::ResourceArtifact), equates to a MODAF::Part&#xA;DoDAF: NA&#xA;"
+                references="#//UAF/Resources/Structure/RoleKind/Sub%20System%20Part"/>
+          </eLiterals>
+          <eLiterals name="Used Physical Architecture"/>
+          <eLiterals name="Hosted Software">
+            <eAnnotations source="Asserts that Software is hosted on a ResourceArtifact (which means the artifact is some kind of computer system)."
+                references="#//UAF/Resources/Structure/RoleKind/Hosted%20Software"/>
+          </eLiterals>
+          <eLiterals name="Artifact Component"/>
+          <eLiterals name="Natural Resource Component"/>
+          <eLiterals name="Other">
+            <eAnnotations source="Other MODAF Role kind that is not on the enumerated list."
+                references="#//UAF/Resources/Structure/RoleKind/Other"/>
+          </eLiterals>
+        </eClassifiers>
+      </eSubpackages>
+      <eSubpackages name="Taxonomy"/>
+      <eSubpackages name="Traceability"/>
+    </eSubpackages>
+    <eSubpackages name="Security">
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="Taxonomy"/>
+      <eSubpackages name="Constraints"/>
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Traceability"/>
+    </eSubpackages>
+    <eSubpackages name="Services">
+      <eSubpackages name="Connectivity"/>
+      <eSubpackages name="Constraints"/>
+      <eSubpackages name="Interaction Scenarios"/>
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="States"/>
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Taxonomy"/>
+      <eSubpackages name="Traceability"/>
+    </eSubpackages>
+    <eSubpackages name="Standards">
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Taxonomy"/>
+    </eSubpackages>
+    <eSubpackages name="Strategic">
+      <eSubpackages name="Processes"/>
+      <eSubpackages name="States"/>
+      <eSubpackages name="Structure"/>
+      <eSubpackages name="Taxonomy"/>
+      <eSubpackages name="Traceability"/>
+    </eSubpackages>
+    <eSubpackages name="Summary and Overview"/>
+  </eSubpackages>
+  <eSubpackages name="DoDAF Class Library" nsURI="http://www.omg.org/spec/UPDM/20121004/DoDAFLibrary">
+    <eClassifiers xsi:type="ecore:EDataType" name="OperationalActivityProperties">
+      <eAnnotations source="Properties detailing aspects OperationalActivities." references="#//DoDAF%20Class%20Library/OperationalActivityProperties"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="InformationAssuranceProperties">
+      <eAnnotations source="Properties indicating the assurance of a piece of information."
+          references="#//DoDAF%20Class%20Library/InformationAssuranceProperties"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="DataElementProperties">
+      <eAnnotations source="Properties detailing the aspects of a DataElement." references="#//DoDAF%20Class%20Library/DataElementProperties"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="InformationElementProperties">
+      <eAnnotations source="Predefined additional DoDAF properties for InformationElement."
+          references="#//DoDAF%20Class%20Library/InformationElementProperties"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="CommunicationsLinkProperties">
+      <eAnnotations source="Properties detailing aspects of Resource Interfaces."
+          references="#//DoDAF%20Class%20Library/CommunicationsLinkProperties"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="ExchangeProperties">
+      <eAnnotations source="Properties detailing aspects of exchange for Operational Exchange and/or Resource Interaction."
+          references="#//DoDAF%20Class%20Library/ExchangeProperties"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="SecurityAttributes">
+      <eAnnotations source="W3C XML Schema for the Intelligence Community Metadata Standard for Information Security Marking (IC-ISM), which is part of the IC standards for Information Assurance."
+          references="#//DoDAF%20Class%20Library/SecurityAttributes"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="ClassificationType">
+      <eAnnotations source="Enumeration of types of security classification, derived from DoDAF."
+          references="#//DoDAF%20Class%20Library/ClassificationType"/>
+      <eLiterals name="C">
+        <eAnnotations source="Confidential" references="#//DoDAF%20Class%20Library/ClassificationType/C"/>
+      </eLiterals>
+      <eLiterals name="CTS">
+        <eAnnotations source="COSMIC TOP SECRET" references="#//DoDAF%20Class%20Library/ClassificationType/CTS"/>
+      </eLiterals>
+      <eLiterals name="CTS-B">
+        <eAnnotations source="COSMIC TOP SECRET - BOHEMIA" references="#//DoDAF%20Class%20Library/ClassificationType/CTS-B"/>
+      </eLiterals>
+      <eLiterals name="CTS-BALK">
+        <eAnnotations source="COSMIC TOP SECRET - BALK" references="#//DoDAF%20Class%20Library/ClassificationType/CTS-BALK"/>
+      </eLiterals>
+      <eLiterals name="CTSA">
+        <eAnnotations source="COSMIC TOP SECRET ATOMAL" references="#//DoDAF%20Class%20Library/ClassificationType/CTSA"/>
+      </eLiterals>
+      <eLiterals name="NC">
+        <eAnnotations source="NATO Confidential" references="#//DoDAF%20Class%20Library/ClassificationType/NC"/>
+      </eLiterals>
+      <eLiterals name="NCA">
+        <eAnnotations source="NATO Confidential Atomal" references="#//DoDAF%20Class%20Library/ClassificationType/NCA"/>
+      </eLiterals>
+      <eLiterals name="NR">
+        <eAnnotations source="NATO Restricted  (similar to US For Official Use only)"
+            references="#//DoDAF%20Class%20Library/ClassificationType/NR"/>
+      </eLiterals>
+      <eLiterals name="NS">
+        <eAnnotations source="NATO Secret" references="#//DoDAF%20Class%20Library/ClassificationType/NS"/>
+      </eLiterals>
+      <eLiterals name="NS-A">
+        <eAnnotations source="NATO Atomal" references="#//DoDAF%20Class%20Library/ClassificationType/NS-A"/>
+      </eLiterals>
+      <eLiterals name="NS-S">
+        <eAnnotations source="NATO Secret" references="#//DoDAF%20Class%20Library/ClassificationType/NS-S"/>
+      </eLiterals>
+      <eLiterals name="NSAT">
+        <eAnnotations source="NATO Secret Atomal" references="#//DoDAF%20Class%20Library/ClassificationType/NSAT"/>
+      </eLiterals>
+      <eLiterals name="NU">
+        <eAnnotations source="NATO Unclassified" references="#//DoDAF%20Class%20Library/ClassificationType/NU"/>
+      </eLiterals>
+      <eLiterals name="R">
+        <eAnnotations source="Restricted Data (RD) US Nuclear Information OR FOR OFFICIAL USE ONLY"
+            references="#//DoDAF%20Class%20Library/ClassificationType/R"/>
+      </eLiterals>
+      <eLiterals name="S">
+        <eAnnotations source="Secret" references="#//DoDAF%20Class%20Library/ClassificationType/S"/>
+      </eLiterals>
+      <eLiterals name="TS">
+        <eAnnotations source="Top Secret" references="#//DoDAF%20Class%20Library/ClassificationType/TS"/>
+      </eLiterals>
+      <eLiterals name="U">
+        <eAnnotations source="Unclassified" references="#//DoDAF%20Class%20Library/ClassificationType/U"/>
+      </eLiterals>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="BillingItem">
+      <eAnnotations source="Properties indicating the assurance of a piece of information."
+          references="#//DoDAF%20Class%20Library/BillingItem"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="Pricing Type">
+      <eLiterals name="perTIme"/>
+      <eLiterals name="perUse"/>
+      <eLiterals name="perQuantity"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" name="Periodicity">
+      <eLiterals name="OnceAMonth"/>
+      <eLiterals name="OnceAWeek"/>
+      <eLiterals name="Anytime"/>
+      <eLiterals name="OnRequest"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" name="Duration"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Cost"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RiskOwner"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="SecurityCategoryProperties"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="SecurityControlProperties"/>
+  </eSubpackages>
+</ecore:EPackage>
