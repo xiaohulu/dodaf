@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("1.1.3.1:1", "", "«IDEAS:TupleType» measureOfIndividual", "EARoot/EA1/EA1/EA3/EA1/EA241.htm", "5.png", "2346", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.1:2", "", "«IDEAS:TupleType» measureOfType", "EARoot/EA1/EA1/EA3/EA1/EA242.htm", "5.png", "2347", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.1:3", "", "«IDEAS:Type» Property", "EARoot/EA1/EA1/EA3/EA1/EA243.htm", "5.png", "2367", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.1:4", "", "«IDEAS:Powertype» PropertyType", "EARoot/EA1/EA1/EA3/EA1/EA244.htm", "5.png", "2711", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.1:5", "", "«IDEAS:TupleType» propertyOfIndividual", "EARoot/EA1/EA1/EA3/EA1/EA245.htm", "5.png", "2570", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.1:6", "", "«IDEAS:TupleType» propertyOfType", "EARoot/EA1/EA1/EA3/EA1/EA246.htm", "5.png", "2571", "0", "", "Class");

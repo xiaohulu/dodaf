@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("1.1.3.3:1", "", "«IDEAS:TupleType» endBoundary", "EARoot/EA1/EA1/EA3/EA3/EA265.htm", "5.png", "790", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:2", "", "«IDEAS:Powertype» EndBoundaryType", "EARoot/EA1/EA1/EA3/EA3/EA266.htm", "5.png", "791", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:3", "", "«IDEAS:TupleType» measureOfIndividualEndBoundary", "EARoot/EA1/EA1/EA3/EA3/EA267.htm", "5.png", "2020", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:4", "", "«IDEAS:TupleType» measureOfIndividualStartBoundary", "EARoot/EA1/EA1/EA3/EA3/EA268.htm", "5.png", "2018", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:5", "", "«IDEAS:TupleType» measureOfTypeEndBoundaryType", "EARoot/EA1/EA1/EA3/EA3/EA269.htm", "5.png", "2021", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:6", "", "«IDEAS:TupleType» measureOfTypeStartBoundaryType", "EARoot/EA1/EA1/EA3/EA3/EA270.htm", "5.png", "2019", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:7", "", "«IDEAS:TupleType» startBoundary", "EARoot/EA1/EA1/EA3/EA3/EA271.htm", "5.png", "792", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:8", "", "«IDEAS:Powertype» StartBoundaryType", "EARoot/EA1/EA1/EA3/EA3/EA272.htm", "5.png", "793", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:9", "", "«IDEAS:TupleType» temporalBoundary", "EARoot/EA1/EA1/EA3/EA3/EA273.htm", "5.png", "794", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:10", "", "«IDEAS:Powertype» TemporalBoundaryType", "EARoot/EA1/EA1/EA3/EA3/EA274.htm", "5.png", "795", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:11", "", "«IDEAS:TupleType» temporalWholePart", "EARoot/EA1/EA1/EA3/EA3/EA275.htm", "5.png", "796", "0", "", "Class");
+tocTab[tocTab.length] = new Array("1.1.3.3:12", "", "«IDEAS:Powertype» TemporalWholePartType", "EARoot/EA1/EA1/EA3/EA3/EA276.htm", "5.png", "2279", "0", "", "Class");
